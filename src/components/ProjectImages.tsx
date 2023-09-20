@@ -1,19 +1,35 @@
 import { useState, useRef } from 'react'
-import type { ImageType } from '../utils/utils.ts'
+import type { ImageType, TechnologiesType } from '../utils/utils.ts'
 
 interface Props {
   image: ImageType
   title: string
+  github: string
+  url: string
+  technologies: TechnologiesType[]
+  description: string
 }
-const ProjectImages = ({ image, title }: Props) => {
-  const dialogRef = useRef(null)
+const ProjectImages = ({
+  image,
+  title,
+  github,
+  url,
+  technologies,
+  description,
+}: Props) => {
+  const dialogRef: React.MutableRefObject<HTMLDialogElement | null> =
+    useRef(null)
 
   const handleClick = () => {
-    dialogRef.current.showModal()
+    if (dialogRef.current !== null) {
+      dialogRef.current.showModal()
+    }
   }
 
   const handleCloseModal = () => {
-    dialogRef.current.close()
+    if (dialogRef.current !== null) {
+      dialogRef.current.close()
+    }
   }
 
   return (
