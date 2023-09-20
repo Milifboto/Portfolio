@@ -1,4 +1,4 @@
-interface ProjectsType {
+export interface ProjectsType {
   id: number
   title: string
   subtitle: string
@@ -10,18 +10,18 @@ interface ProjectsType {
   technologies: TechnologiesType[]
 }
 
-interface ImageType {
+export interface ImageType {
   cover: string
   secondImage: string
   thirdImage: string
 }
 
-type TechnologiesType = {
+export type TechnologiesType = {
   name: string
   svg: string
 }
 
-const Proyects: ProjectsType[] = [
+export const projects: ProjectsType[] = [
   {
     id: 1,
     title: 'Bookbuster',
@@ -33,7 +33,7 @@ const Proyects: ProjectsType[] = [
     },
     video: '',
     github: 'https://github.com/bookbuster-ar/web-app-front',
-    url: '',
+    url: 'https://bookbuster-ar.vercel.app/',
     description: 'https://github.com/bookbuster-ar/web-app-backend',
     technologies: [
       {
