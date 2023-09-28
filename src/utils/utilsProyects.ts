@@ -27,7 +27,7 @@ export const projects: ProjectsType[] = [
     title: 'Bookbuster',
     subtitle: 'Web app',
     image: {
-      cover: '../../assets/bbt.png',
+      cover: '../../assets/bookbuster/bbt_cover.png',
       secondImage: '',
       thirdImage: '',
     },
@@ -95,7 +95,7 @@ export const projects: ProjectsType[] = [
     title: 'Rick And Morty WIKI',
     subtitle: 'Web app using Typescript',
     image: {
-      cover: '',
+      cover: '../../assets/rickAndMorty/RickAndMorty_cover.png',
       secondImage: '',
       thirdImage: '',
     },
@@ -135,7 +135,7 @@ export const projects: ProjectsType[] = [
     title: 'Woofys',
     subtitle: 'Web app',
     image: {
-      cover: '',
+      cover: '../../assets/woofys/Woofys_cover.png',
       secondImage: '',
       thirdImage: '',
     },

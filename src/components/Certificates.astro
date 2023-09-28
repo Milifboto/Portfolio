@@ -1,0 +1,21 @@
+---
+import { certifications } from "../utils/utilsCertificates.ts"
+import CardCertificates from "./CardCertificates.astro";
+---
+
+<div class="flex flex-col items-center justify-center mt-20">
+  <div class="w-2/3 flex flex-col ">
+    <h1 class="font-extrabold text-6xl my-4 pb-8">Certifications</h1>
+    <div class="grid gap-8 lg:grid-cols-2 sm:grid-cols-1 place-items-center">
+      {
+        certifications.map(({id, title, subtitle, image, url}) => <CardCertificates
+        id={id}
+        title={title}
+        subtitle={subtitle}
+        image={image}
+        url={url}
+        />)
+      }
+    </div>
+  </div>
+</div>

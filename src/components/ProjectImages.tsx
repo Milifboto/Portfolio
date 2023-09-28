@@ -1,5 +1,5 @@
-import { useState, useRef } from 'react'
-import type { ImageType, TechnologiesType } from '../utils/utils.ts'
+import { useRef } from 'react'
+import type { ImageType, TechnologiesType } from '../utils/utilsProyects.ts'
 
 interface Props {
   image: ImageType
@@ -38,7 +38,7 @@ const ProjectImages = ({
         src={image.cover}
         alt={title}
         onClick={handleClick}
-        className='cursor-pointer rounded-xl'
+        className='cursor-pointer aspect-auto transition-transform duration-300 rounded-xl hover:scale-105 w-auto h-auto'
       />
       <dialog ref={dialogRef}>
         <h1>{title}</h1>
