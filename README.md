@@ -1,4 +1,4 @@
-# Welcome to my Portfolio !
+# Welcome to my Portfolio ! 💻
 
 This is my portfolio website built using Astro, TypeScript, and Tailwind CSS. It showcases my projects, skills, and experiences. I plan to keep upgrading and improving this portfolio to reflect my latest work and accomplishments.
 
